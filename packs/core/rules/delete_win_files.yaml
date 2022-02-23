@@ -1,0 +1,21 @@
+---
+    name: "delete_win_files"
+    pack: "core"
+    description: "Cron to delete windows files at x interval"
+    enabled: true                    
+
+    trigger:                              
+      type: "core.st2.IntervalTimer"
+      parameters: 
+        delta: 1
+        unit: minutes
+
+    action:                               
+        ref: "core.winrm_cmd"
+        parameters:                   
+            cmd: "date /t"
+            host: 192.168.122.120
+            username: "st2admin"
+            password: "Sys@dmin19"
+            verify_ssl_cert: False
+

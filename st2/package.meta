@@ -1,0 +1,4 @@
+[server]
+version = 3.6.0
+git_sha = 15dcd3b36
+circle_build_url = https://circleci.com/gh/StackStorm/st2/13972

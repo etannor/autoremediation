@@ -1,0 +1,4 @@
+[st2web]
+version = 3.6.0
+git_sha = aa752f3d
+circle_build_url = https://circleci.com/gh/StackStorm/st2web/4365
